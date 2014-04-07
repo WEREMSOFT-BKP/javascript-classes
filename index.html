@@ -1,26 +1,37 @@
 <html>
 
-<head>
-<script src="http://code.jquery.com/jquery-2.1.0.js"></script>
-<script src="js/mainclass.js"></script>
+    <head>
+        <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+        <script src="js/mainclass.js"></script>
 
 
-</head>
-<body>
-<script type="text/javascript">
-	var obj = MyClass.initialize();
-	var obj2 = MyClass.initialize();
+    </head>
+    <body>
+        <h1>MI GARCHA ES MUY, pero MUY GRANDE - test de commit - test</h1>
+        <script type="text/javascript">
+            var obj = MyClass.initialize();
+            var obj2 = MyClass.initialize();
 	
-	obj2.name = "Pablo";
-	obj.name = "Umberto";
+            obj2.name = "Paulo";
+            obj.name = "Umberto";
 
 
-	obj.printWerem();	
-	obj2.printWerem();
+            obj.printWerem();	
+            obj2.printWerem();
 
-	console.log("test");
-</script>
-<h1>MI GARCHA ES MUY, pero MUY GRANDE - test de commit - test</h1>
-
-</body>
+            console.log("test");
+        
+     
+        </script>
+        <script type="text/javascript">
+            // hola, te vengo a ensuciar el codigo.
+            $( "h1" ).one( "click", unClick );
+            function unClick() {
+                console.log( "listo ya hiciste click, no lo repitas !" );
+                
+                $( this ).click( function() { console.log( "sos tonto? te dije que no hagas" );
+                });
+            }
+        </script>
+    </body>
 </html>

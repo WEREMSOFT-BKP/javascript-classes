@@ -1,10 +1,23 @@
 <html>
 
 <head>
+<script src="http://code.jquery.com/jquery-2.1.0.js"></script>
 <script src="js/mainclass.js"></script>
+
+
 </head>
 <body>
 <script type="text/javascript">
+	var obj = MyClass.initialize();
+	var obj2 = MyClass.initialize();
+	
+	obj2.name = "Pablo";
+	obj.name = "Roberto";
+
+
+	obj.printWerem();	
+	obj2.printWerem();
+
 	console.log("test");
 </script>
 <h1>MI GARCHA ES MUY, pero MUY GRANDE - test de commit - test</h1>
